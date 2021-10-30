@@ -18,7 +18,10 @@ public class Account {
     @JoinColumn(name = "person_Id")
     private Person customer;
 
+
+
     private Double balance;
+
 
     public boolean debit(Double valueDebit){
 
