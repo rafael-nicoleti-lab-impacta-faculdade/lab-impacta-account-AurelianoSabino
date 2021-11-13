@@ -26,7 +26,6 @@ public class AccountApplicationImpl implements AccountApplication {
     @Override
     public DebitAccountResponse debit(Long accountId, DebitAccountRequest debitAccountRequest) {
         accountService.debitAccount(accountId,debitAccountRequest.getValueOfDebit());
-
         return new DebitAccountResponse(true);
     }
 }
