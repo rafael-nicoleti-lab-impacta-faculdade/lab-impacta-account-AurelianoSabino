@@ -22,7 +22,7 @@ public class ControllerExceptionHandler {
                 accountDontExistsException.getMessage(),
                 accountDontExistsException.getDescription());
 
-        return new ResponseEntity<>(errorMessageResponse, HttpStatus.NOT_FOUND);
+         return new ResponseEntity<>(errorMessageResponse, HttpStatus.NOT_FOUND);
     }
 
     @ExceptionHandler(AccountWithoutBalanceException.class)
